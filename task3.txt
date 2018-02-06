@@ -5,9 +5,9 @@
 5. sudo chmod 770 project1
 6. sudo chown john project1
 7. umask 0027
-8. The umask changes the permissions by removing the write permission from the group permission and removing all permissions from the others.
-9. I can't copy the file because the group permissions doesn't allow user01 to write to the directory.
+8. The effect of the "umask 0027" command is that the umask changes the permissions by removing the write permission from the group's permission and removes all permissions from the others.
+9. I am not able to copy the file because the group's permission doesn't allow user01 to write to the directory.
 10. You don't have permission on this server.
 11. sudo chown user01 project1
-12. user01 ownership permission allow full access to the directory.
-13. sudo chmod 770 project 
+12. I was successful this time because user01's ownership gaves us permission to fully access the directory.
+13. You can access the directory as long as you know the password to access project1 using sudo /home/project1 .
