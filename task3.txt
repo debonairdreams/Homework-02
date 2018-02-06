@@ -1,1 +1,13 @@
-
+1. sudo groupadd project1
+2. sudo gpasswd -a john
+3. sudo gpasswd -a user01 project1
+4. sudo cd home; mkdir project1
+5. sudo chmod 770 project1
+6. sudo chown john project1
+7. umask 0027
+8. The umask changes the permissions by removing the write permission from the group permission and removing all permissions from the others.
+9. I can't copy the file because the group permissions doesn't allow user01 to write to the directory.
+10. You don't have permission on this server.
+11. sudo chown user01 project1
+12. user01 ownership permission allow full access to the directory.
+13. sudo chmod 770 project 
